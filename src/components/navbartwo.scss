@@ -1,0 +1,165 @@
+/*Navbar Horizontal*/
+.main-header2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 900;
+    background-color: none;
+
+
+    .logo2 {
+        width: 187px;
+        background-size: cover;
+        object-fit: contain;
+        transition: all .3s ease-in-out;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logo-par12 {
+        width: 60px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .nav-links2 {
+        display: flex;
+        list-style: none;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 418px;
+        padding: 10px;
+        margin: auto;
+
+
+        .nav-link2 {
+
+            padding: 0;
+            margin: 0 5px;
+
+            a {
+                text-decoration: none;
+                color: #171A20;
+                font-family: Montserrat;
+                font-size: 0.938rem;
+                padding: 5px 10px;
+                line-height: 10px;
+                text-align: center;
+                border-radius: 12px;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .redes {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 150.9px;
+
+
+        .nav-link2 {
+            width: 18px;
+            margin: auto;
+
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+
+            }
+
+        }
+    }
+
+    /*------------------------------------------------------------------------------*/
+    /*MENU HOVER*/
+
+    .nav-links2 .nav-link2 a:hover {
+        background: #F4F4F4;
+        transition: width 0.7s ease, background-color 0.5s ease;
+    }
+
+    .nav-link2 .active {
+        background: #F4F4F4;
+        transition: width 0.7s ease, background-color 0.5s ease;
+    }
+
+    /*------------------------------------------------------------------------------*/
+
+}
+
+
+/*Navbar Vertical*/
+.header2 {
+    height: 74px;
+    position: absolute;
+    z-index: 900;
+    width: 100vw;
+    padding: 0 40px;
+    align-items: center;
+    display: none;
+}
+
+.logo2 {
+    width: 187px;
+    background-size: cover;
+    object-fit: contain;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-par12 {
+    width: 60px;
+    justify-content: center;
+    display: flex;
+}
+
+.text-Menu2 {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    background: #F4F4F4;
+    transition: width 0.7s ease, background-color 0.5s ease;
+    width: 66px;
+    height: 28.29px;
+    border-radius: 9px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #171A20;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1145px) {
+    .scrol {
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+    }
+
+    .main-header2 {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+    }
+
+
+
+}

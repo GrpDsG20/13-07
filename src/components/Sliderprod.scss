@@ -1,0 +1,180 @@
+.App {
+  margin: auto;
+  background-color: #FFF;
+  padding: 30px 15px;
+  font-family: Montserrat;
+  overflow: hidden;
+
+}
+.card {
+  border: none;
+  background-color: #F8F8F8;
+
+}
+
+.cart-top img {
+  width: 100%;
+  padding: 90px;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-color: #F8F8F8;
+
+}
+
+/*Modif Slider*/
+
+
+.slick-slide>div {
+  margin: 0 10px;
+
+}
+
+.slick-arrow {
+  display: block;
+  top: 35%;
+  margin: 47px;
+  z-index: 100;
+
+}
+
+.slick-prev:before {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('../img/rigthsvg.svg');
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  background-position: center center;
+  margin-left: -10px;
+  opacity: 0;
+  content: "";
+
+}
+
+.slick-next:before {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('../img/nextsvg.svg');
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  margin-left: -10px;
+  background-position: center center;
+  opacity: 0;
+  content: "";
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0;
+}
+
+.App:hover {
+
+  .slick-prev:before,
+  .slick-next:before {
+
+    opacity: 1;
+  }
+
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: .25;
+  }
+
+}
+
+.slick-slider .slick-dots li {
+  display: none;
+}
+
+/*--------END----------*/
+
+
+.cart-top h4 {
+  font-size: 1.125rem;
+  margin: auto;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #FFF;
+  color: #171A20;
+
+
+}
+
+@media screen and (max-width: 1400px) {
+  .cart-top img {
+
+    padding: 50px;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cart-top img {
+
+    padding: 50px;
+
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+
+  .App {
+    padding: 30px 15px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart-top img {
+
+    padding: 30px;
+
+  }
+
+  .cart-top h4 {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 620px) {
+
+  .cart-top h4 {
+    font-size: 0.875rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .cart-top img {
+
+    padding: 40px;
+
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+  .cart-top img {
+
+    padding: 10px;
+
+  }
+
+
+}
